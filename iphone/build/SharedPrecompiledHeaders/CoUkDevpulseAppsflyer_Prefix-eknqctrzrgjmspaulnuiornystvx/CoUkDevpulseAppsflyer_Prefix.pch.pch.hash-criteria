@@ -1,0 +1,27 @@
+-x
+objective-c
+-arch
+i386
+-std=c99
+-fpascal-strings
+-Os
+-DTI_VERSION=
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk
+-fasm-blocks
+-mios-simulator-version-min=6.0
+-g
+-fobjc-abi-version=2
+-fobjc-legacy-dispatch
+-iquote
+-iquote
+-I/Users/jayy/Programming/TiModules/AppsFlyer/iphone/build/Release-iphonesimulator/include
+-I/Users/jayy/Library/Application Support/Titanium/mobilesdk/osx/6.0.4.GA/iphone/include
+-I/Users/jayy/Library/Application Support/Titanium/mobilesdk/osx/6.0.4.GA/iphone/include/TiCore
+-I/Users/jayy/Library/Application Support/Titanium/mobilesdk/osx/6.0.4.GA/iphone/include/JavaScriptCore
+-F/Users/jayy/Programming/TiModules/AppsFlyer/iphone/build/Release-iphonesimulator
+-DTI_POST_1_2
+i386-apple-darwin16.5.0
+"4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.41)"
+SDK_PRODUCT_BUILD_VERSION=14E269
+14E269
