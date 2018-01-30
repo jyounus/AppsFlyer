@@ -1,39 +1,28 @@
-// This is a test harness for your module
-// You should do something interesting in this harness
-// to test out the module and to provide instructions
-// to users on how to use it by example.
+// Function that will be exported and called by the app's relevant events
+function sendEvent(tag, value) {
+	if (!tag) Ti.API.info("Missing mandatory TAG parameter on appsFlyer sendEvent");
 
+	// Building object with only the Tag property. Value will be added only if it's sent
+	var objToSend = { name: tag };
+	if (value) objToSend.data = {
+		value : value
+	};
 
-// open a single window
-var win = Ti.UI.createWindow({
-	backgroundColor:'white'
-});
-var label = Ti.UI.createLabel();
-win.add(label);
-win.open();
+	Ti.API.info( "Sending Event to AppsFlyer: " + JSON.stringify(objToSend) );
 
-// TODO: write your module tests here
-var appsflyer = require('co.uk.devpulse.appsflyer');
-Ti.API.info("module is => " + appsflyer);
-
-label.text = appsflyer.example();
-
-Ti.API.info("module exampleProp is => " + appsflyer.exampleProp);
-appsflyer.exampleProp = "This is a test value";
-
-if (Ti.Platform.name == "android") {
-	var proxy = appsflyer.createExample({
-		message: "Creating an example Proxy",
-		backgroundColor: "red",
-		width: 100,
-		height: 100,
-		top: 100,
-		left: 150
-	});
-
-	proxy.printMessage("Hello world!");
-	proxy.message = "Hi world!.  It's me again.";
-	proxy.printMessage("Hello world!");
-	win.add(proxy);
+	// Send the built event to AppsFlyer servers
+	appsflyer.trackEvent(objToSend);
 }
 
+// Code for iOS initialization
+if (OS_IOS) {
+	var appsflyer = require('co.uk.devpulse.appsflyer');
+	var config = {
+		'appsFlyerDevKey': 'MY_APPSFLYER_DEVKEY',
+		'appleAppID' : 'MY_APP_ID',
+		'isDebug' : true
+	}
+	appsflyer.initialise(config);
+} else if (OS_ANDROID) {
+	// Code for Android initialization here
+}
