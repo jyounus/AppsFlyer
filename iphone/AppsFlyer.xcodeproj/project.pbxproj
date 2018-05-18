@@ -26,9 +26,11 @@
 		24DD6CFA1134B3F500162E58 /* CoUkDevpulseAppsflyerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* CoUkDevpulseAppsflyerModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* CoUkDevpulseAppsflyerModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* CoUkDevpulseAppsflyerModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* CoUkDevpulseAppsflyerModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* CoUkDevpulseAppsflyerModuleAssets.m */; };
+		45BD088E20AEDC6D0014BEB4 /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BD088D20AEDC6D0014BEB4 /* AppsFlyerLib.framework */; };
+		45BD089020AEDCEB0014BEB4 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BD088F20AEDCEB0014BEB4 /* iAd.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		653F9EB91EE5636700E6A58B /* AppsFlyerTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 653F9EB71EE5636700E6A58B /* AppsFlyerTracker.h */; };
 		653F9EBA1EE5636700E6A58B /* libAppsFlyerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 653F9EB81EE5636700E6A58B /* libAppsFlyerLib.a */; };
-		65B766EB1EE95716000A0F40 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B766EA1EE95716000A0F40 /* AdSupport.framework */; };
+		65B766EB1EE95716000A0F40 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B766EA1EE95716000A0F40 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		AA747D9F0F9514B9006C5449 /* CoUkDevpulseAppsflyer_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CoUkDevpulseAppsflyer_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +51,8 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* CoUkDevpulseAppsflyerModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoUkDevpulseAppsflyerModuleAssets.h; path = Classes/CoUkDevpulseAppsflyerModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* CoUkDevpulseAppsflyerModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoUkDevpulseAppsflyerModuleAssets.m; path = Classes/CoUkDevpulseAppsflyerModuleAssets.m; sourceTree = "<group>"; };
+		45BD088D20AEDC6D0014BEB4 /* AppsFlyerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppsFlyerLib.framework; sourceTree = "<group>"; };
+		45BD088F20AEDCEB0014BEB4 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		653F9EB71EE5636700E6A58B /* AppsFlyerTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppsFlyerTracker.h; path = platform/AppsFlyerTracker.h; sourceTree = "<group>"; };
 		653F9EB81EE5636700E6A58B /* libAppsFlyerLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppsFlyerLib.a; path = platform/libAppsFlyerLib.a; sourceTree = "<group>"; };
 		65B766EA1EE95716000A0F40 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
@@ -62,9 +66,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45BD089020AEDCEB0014BEB4 /* iAd.framework in Frameworks */,
 				653F9EBA1EE5636700E6A58B /* libAppsFlyerLib.a in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				65B766EB1EE95716000A0F40 /* AdSupport.framework in Frameworks */,
+				45BD088E20AEDC6D0014BEB4 /* AppsFlyerLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +92,7 @@
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				45BD088D20AEDC6D0014BEB4 /* AppsFlyerLib.framework */,
 			);
 			name = AppsFlyer;
 			sourceTree = "<group>";
@@ -93,6 +100,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45BD088F20AEDCEB0014BEB4 /* iAd.framework */,
 				653F9EB71EE5636700E6A58B /* AppsFlyerTracker.h */,
 				653F9EB81EE5636700E6A58B /* libAppsFlyerLib.a */,
 				65B766EA1EE95716000A0F40 /* AdSupport.framework */,
@@ -161,6 +169,9 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0600;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "AppsFlyer" */;
