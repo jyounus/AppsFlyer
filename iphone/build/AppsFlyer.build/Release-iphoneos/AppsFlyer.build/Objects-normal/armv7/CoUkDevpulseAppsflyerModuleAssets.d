@@ -1,3 +1,4 @@
 dependencies: \
-  /Users/jayy/Programming/TiModules/AppsFlyer/iphone/Classes/CoUkDevpulseAppsflyerModuleAssets.m \
-  /Users/jayy/Programming/TiModules/AppsFlyer/iphone/Classes/CoUkDevpulseAppsflyerModuleAssets.h
+  /Users/mitishah/Documents/Development/Appcelerator_Studio_Workspace/AppsFlyer/iphone/CoUkDevpulseAppsflyer_Prefix.pch \
+  /Users/mitishah/Documents/Development/Appcelerator_Studio_Workspace/AppsFlyer/iphone/Classes/CoUkDevpulseAppsflyerModuleAssets.m \
+  /Users/mitishah/Documents/Development/Appcelerator_Studio_Workspace/AppsFlyer/iphone/Classes/CoUkDevpulseAppsflyerModuleAssets.h

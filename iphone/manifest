@@ -2,7 +2,7 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0.0
+version: 2.0.0
 apiversion: 2
 architectures: armv7 arm64 i386 x86_64
 description: AppsFlyer
@@ -15,4 +15,4 @@ name: AppsFlyer
 moduleid: co.uk.devpulse.appsflyer
 guid: 13eb3c42-b132-46eb-a560-bfbe2298307e
 platform: iphone
-minsdk: 6.0.4.GA
+minsdk: 7.1.0.GA
