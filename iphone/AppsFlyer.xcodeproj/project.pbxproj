@@ -34,6 +34,7 @@
 		65B766EB1EE95716000A0F40 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B766EA1EE95716000A0F40 /* AdSupport.framework */; };
 		AA747D9F0F9514B9006C5449 /* CoUkDevpulseAppsflyer_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CoUkDevpulseAppsflyer_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		AB103C6A2141441400D74BE7 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB103C692141441400D74BE7 /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		65B766EA1EE95716000A0F40 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
 		AA747D9E0F9514B9006C5449 /* CoUkDevpulseAppsflyer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoUkDevpulseAppsflyer_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB103C692141441400D74BE7 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libco.uk.devpulse.appsflyer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libco.uk.devpulse.appsflyer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB103C6A2141441400D74BE7 /* iAd.framework in Frameworks */,
 				45125F9C20CAA67000C61038 /* libAppsFlyerLib.a in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				65B766EB1EE95716000A0F40 /* AdSupport.framework in Frameworks */,
@@ -99,6 +102,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB103C692141441400D74BE7 /* iAd.framework */,
 				45125FA120CAA7AF00C61038 /* AppsFlyerLinkGenerator.h */,
 				45125F9F20CAA79400C61038 /* AppsFlyerShareInviteHelper.h */,
 				45125F9D20CAA76600C61038 /* AppsFlyerCrossPromotionHelper.h */,

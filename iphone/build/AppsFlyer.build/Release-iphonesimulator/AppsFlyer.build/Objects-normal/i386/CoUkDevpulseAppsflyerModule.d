@@ -1,39 +1,39 @@
 dependencies: \
-  /Users/mitishah/Documents/Development/Appcelerator_Studio_Workspace/AppsFlyer/iphone/CoUkDevpulseAppsflyer_Prefix.pch \
-  /Users/mitishah/Documents/Development/Appcelerator_Studio_Workspace/AppsFlyer/iphone/Classes/CoUkDevpulseAppsflyerModule.m \
-  /Users/mitishah/Documents/Development/Appcelerator_Studio_Workspace/AppsFlyer/iphone/Classes/CoUkDevpulseAppsflyerModule.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiModule.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiEvaluator.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/KrollContext.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiToJS.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/TiCore.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/Ti.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/TiBase.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/TiContextRef.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/TiObjectRef.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/TiValueRef.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/WebKitAvailability.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/TiStringRef.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/TiStringRefCF.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiProxy.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/KrollCallback.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/KrollObject.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiBindingRunLoop.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiBase.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/defines.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiThreading.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiPublicAPI.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiUtils.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiDimension.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiBuffer.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiBlob.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiColor.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiFile.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/WebFont.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiHost.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/Bridge.h \
-  /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiStylesheet.h \
-  /Users/mitishah/Documents/Development/Appcelerator_Studio_Workspace/AppsFlyer/iphone/platform/AppsFlyerTracker.h \
-  /Users/mitishah/Documents/Development/Appcelerator_Studio_Workspace/AppsFlyer/iphone/AppsFlyerCrossPromotionHelper.h \
-  /Users/mitishah/Documents/Development/Appcelerator_Studio_Workspace/AppsFlyer/iphone/AppsFlyerShareInviteHelper.h \
-  /Users/mitishah/Downloads/AF-iOS-SDK/AppsFlyerLinkGenerator.h
+  /Users/lloyddsouza/Documents/Appcelerator_Studio_Workspace/AppsFlyer/iphone/CoUkDevpulseAppsflyer_Prefix.pch \
+  /Users/lloyddsouza/Documents/Appcelerator_Studio_Workspace/AppsFlyer/iphone/Classes/CoUkDevpulseAppsflyerModule.m \
+  /Users/lloyddsouza/Documents/Appcelerator_Studio_Workspace/AppsFlyer/iphone/Classes/CoUkDevpulseAppsflyerModule.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiModule.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiEvaluator.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/KrollContext.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiToJS.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/TiCore.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/Ti.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/TiBase.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/TiContextRef.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/TiObjectRef.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/TiValueRef.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/WebKitAvailability.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/TiStringRef.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/JavaScriptCore/TiStringRefCF.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiProxy.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/KrollCallback.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/KrollObject.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiBindingRunLoop.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiBase.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/defines.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiThreading.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiPublicAPI.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiUtils.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiDimension.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiBuffer.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiBlob.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiColor.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiFile.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/WebFont.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiHost.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/Bridge.h \
+  /Users/lloyddsouza/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/iphone/include/TiStylesheet.h \
+  /Users/lloyddsouza/Documents/Appcelerator_Studio_Workspace/AppsFlyer/iphone/platform/AppsFlyerTracker.h \
+  /Users/lloyddsouza/Documents/Appcelerator_Studio_Workspace/AppsFlyer/iphone/AppsFlyerCrossPromotionHelper.h \
+  /Users/lloyddsouza/Documents/Appcelerator_Studio_Workspace/AppsFlyer/iphone/AppsFlyerShareInviteHelper.h \
+  /Users/lloyddsouza/Documents/Appcelerator_Studio_Workspace/AppsFlyer/iphone/AppsFlyerLinkGenerator.h
