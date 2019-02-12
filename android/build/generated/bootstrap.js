@@ -24,25 +24,23 @@ function moduleBootstrap(moduleBinding) {
 		invocationAPIs.push({ namespace: namespace, api: api });
 	}
 
-		addInvocationAPI(module, "AppsFlyer", "AppsFlyer", "createExample");
+	addInvocationAPI(module, "AppsFlyer", "AppsFlyer", "createExample");
+		if (!("__propertiesDefined__" in module)) {Object.defineProperties(module, {
+"Example": {
+get: function() {
+var Example =  lazyGet(this, "co.uk.devpulse.appsflyer.ExampleProxy", "Example", "Example");
+return Example;
+},
+configurable: true
+},
 
-			if (!("__propertiesDefined__" in module)) {		
-		Object.defineProperties(module, {
-			"Example": {
-				get: function() {
-					var Example = lazyGet(this, "co.uk.devpulse.appsflyer.ExampleProxy", "Example", "Example");
-					return Example;
-				},
-				configurable: true
-			},
-		
-		});
-		module.constructor.prototype.createExample = function() {
-			return new module.Example(arguments);
-		}
-		}
-		module.__propertiesDefined__ = true;
-		return module;
+});
+module.constructor.prototype.createExample = function() {
+return new module["Example"](arguments);
+}
+}
+module.__propertiesDefined__ = true;
+return module;
 
 }
 exports.bootstrap = moduleBootstrap;

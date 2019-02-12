@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2011-2016 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2011-2017 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  */
@@ -10,11 +10,8 @@
 #include "co.uk.devpulse.appsflyer.ExampleProxy.h"
 
 #include "AndroidUtil.h"
-#include "EventEmitter.h"
 #include "JNIUtil.h"
 #include "JSException.h"
-#include "Proxy.h"
-#include "ProxyFactory.h"
 #include "TypeConverter.h"
 #include "V8Util.h"
 
@@ -35,7 +32,7 @@ namespace appsflyer {
 Persistent<FunctionTemplate> ExampleProxy::proxyTemplate;
 jclass ExampleProxy::javaClass = NULL;
 
-ExampleProxy::ExampleProxy(jobject javaObject) : titanium::Proxy(javaObject)
+ExampleProxy::ExampleProxy() : titanium::Proxy()
 {
 }
 
@@ -44,9 +41,17 @@ void ExampleProxy::bindProxy(Local<Object> exports, Local<Context> context)
 	Isolate* isolate = context->GetIsolate();
 
 	Local<FunctionTemplate> pt = getProxyTemplate(isolate);
-	Local<Function> proxyConstructor = pt->GetFunction(context).ToLocalChecked();
+
+	v8::TryCatch tryCatch(isolate);
+	Local<Function> constructor;
+	MaybeLocal<Function> maybeConstructor = pt->GetFunction(context);
+	if (!maybeConstructor.ToLocal(&constructor)) {
+		titanium::V8Util::fatalException(isolate, tryCatch);
+		return;
+	}
+
 	Local<String> nameSymbol = NEW_SYMBOL(isolate, "Example"); // use symbol over string for efficiency
-	exports->Set(nameSymbol, proxyConstructor);
+	exports->Set(nameSymbol, constructor);
 }
 
 void ExampleProxy::dispose(Isolate* isolate)
@@ -65,7 +70,7 @@ Local<FunctionTemplate> ExampleProxy::getProxyTemplate(Isolate* isolate)
 		return proxyTemplate.Get(isolate);
 	}
 
-	LOGD(TAG, "GetProxyTemplate");
+	LOGD(TAG, "ExampleProxy::getProxyTemplate()");
 
 	javaClass = titanium::JNIUtil::findClass("co/uk/devpulse/appsflyer/ExampleProxy");
 	EscapableHandleScope scope(isolate);
@@ -79,9 +84,7 @@ Local<FunctionTemplate> ExampleProxy::getProxyTemplate(Isolate* isolate)
 
 	proxyTemplate.Reset(isolate, t);
 	t->Set(titanium::Proxy::inheritSymbol.Get(isolate),
-		FunctionTemplate::New(isolate, titanium::Proxy::inherit<ExampleProxy>)->GetFunction());
-
-	titanium::ProxyFactory::registerProxyPair(javaClass, *t);
+		FunctionTemplate::New(isolate, titanium::Proxy::inherit<ExampleProxy>));
 
 	// Method bindings --------------------------------------------------------
 	titanium::SetProtoMethod(isolate, t, "printMessage", ExampleProxy::printMessage);
@@ -134,12 +137,18 @@ void ExampleProxy::printMessage(const FunctionCallbackInfo<Value>& args)
 	}
 
 	Local<Object> holder = args.Holder();
-	// If holder isn't the JavaObject wrapper we expect, look up the prototype chain
 	if (!JavaObject::isJavaObject(holder)) {
 		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
 	}
-
-	titanium::Proxy* proxy = titanium::Proxy::unwrap(holder);
+	if (holder.IsEmpty() || holder->IsNull()) {
+		args.GetReturnValue().Set(v8::Undefined(isolate));
+		return;
+	}
+	titanium::Proxy* proxy = NativeObject::Unwrap<titanium::Proxy>(holder);
+	if (!proxy) {
+		args.GetReturnValue().Set(Undefined(isolate));
+		return;
+	}
 
 	if (args.Length() < 1) {
 		char errorStringBuffer[100];
@@ -166,11 +175,13 @@ void ExampleProxy::printMessage(const FunctionCallbackInfo<Value>& args)
 	}
 
 	jobject javaProxy = proxy->getJavaObject();
+	if (javaProxy == NULL) {
+		args.GetReturnValue().Set(v8::Undefined(isolate));
+		return;
+	}
 	env->CallVoidMethodA(javaProxy, methodID, jArguments);
 
-	if (!JavaObject::useGlobalRefs) {
-		env->DeleteLocalRef(javaProxy);
-	}
+	proxy->unreferenceJavaObject(javaProxy);
 
 
 
@@ -211,23 +222,31 @@ void ExampleProxy::getMessage(const FunctionCallbackInfo<Value>& args)
 	}
 
 	Local<Object> holder = args.Holder();
-	// If holder isn't the JavaObject wrapper we expect, look up the prototype chain
 	if (!JavaObject::isJavaObject(holder)) {
 		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
 	}
-
-	titanium::Proxy* proxy = titanium::Proxy::unwrap(holder);
+	if (holder.IsEmpty() || holder->IsNull()) {
+		args.GetReturnValue().Set(v8::Undefined(isolate));
+		return;
+	}
+	titanium::Proxy* proxy = NativeObject::Unwrap<titanium::Proxy>(holder);
+	if (!proxy) {
+		args.GetReturnValue().Set(Undefined(isolate));
+		return;
+	}
 
 	jvalue* jArguments = 0;
 
 	jobject javaProxy = proxy->getJavaObject();
+	if (javaProxy == NULL) {
+		args.GetReturnValue().Set(v8::Undefined(isolate));
+		return;
+	}
 	jstring jResult = (jstring)env->CallObjectMethodA(javaProxy, methodID, jArguments);
 
 
 
-	if (!JavaObject::useGlobalRefs) {
-		env->DeleteLocalRef(javaProxy);
-	}
+	proxy->unreferenceJavaObject(javaProxy);
 
 
 
@@ -273,12 +292,18 @@ void ExampleProxy::setMessage(const FunctionCallbackInfo<Value>& args)
 	}
 
 	Local<Object> holder = args.Holder();
-	// If holder isn't the JavaObject wrapper we expect, look up the prototype chain
 	if (!JavaObject::isJavaObject(holder)) {
 		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
 	}
-
-	titanium::Proxy* proxy = titanium::Proxy::unwrap(holder);
+	if (holder.IsEmpty() || holder->IsNull()) {
+		args.GetReturnValue().Set(v8::Undefined(isolate));
+		return;
+	}
+	titanium::Proxy* proxy = NativeObject::Unwrap<titanium::Proxy>(holder);
+	if (!proxy) {
+		args.GetReturnValue().Set(Undefined(isolate));
+		return;
+	}
 
 	if (args.Length() < 1) {
 		char errorStringBuffer[100];
@@ -305,11 +330,13 @@ void ExampleProxy::setMessage(const FunctionCallbackInfo<Value>& args)
 	}
 
 	jobject javaProxy = proxy->getJavaObject();
+	if (javaProxy == NULL) {
+		args.GetReturnValue().Set(v8::Undefined(isolate));
+		return;
+	}
 	env->CallVoidMethodA(javaProxy, methodID, jArguments);
 
-	if (!JavaObject::useGlobalRefs) {
-		env->DeleteLocalRef(javaProxy);
-	}
+	proxy->unreferenceJavaObject(javaProxy);
 
 
 
@@ -351,8 +378,15 @@ void ExampleProxy::getter_message(Local<Name> property, const PropertyCallbackIn
 		}
 	}
 
-	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
-
+	Local<Object> holder = args.Holder();
+	if (!JavaObject::isJavaObject(holder)) {
+		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
+	}
+	if (holder.IsEmpty() || holder->IsNull()) {
+		args.GetReturnValue().Set(v8::Undefined(isolate));
+		return;
+	}
+	titanium::Proxy* proxy = NativeObject::Unwrap<titanium::Proxy>(holder);
 	if (!proxy) {
 		args.GetReturnValue().Set(Undefined(isolate));
 		return;
@@ -361,13 +395,15 @@ void ExampleProxy::getter_message(Local<Name> property, const PropertyCallbackIn
 	jvalue* jArguments = 0;
 
 	jobject javaProxy = proxy->getJavaObject();
+	if (javaProxy == NULL) {
+		args.GetReturnValue().Set(v8::Undefined(isolate));
+		return;
+	}
 	jstring jResult = (jstring)env->CallObjectMethodA(javaProxy, methodID, jArguments);
 
 
 
-	if (!JavaObject::useGlobalRefs) {
-		env->DeleteLocalRef(javaProxy);
-	}
+	proxy->unreferenceJavaObject(javaProxy);
 
 
 
@@ -411,7 +447,15 @@ void ExampleProxy::setter_message(Local<Name> property, Local<Value> value, cons
 		}
 	}
 
-	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+	Local<Object> holder = args.Holder();
+	if (!JavaObject::isJavaObject(holder)) {
+		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
+	}
+	if (holder.IsEmpty() || holder->IsNull()) {
+		args.GetReturnValue().Set(v8::Undefined(isolate));
+		return;
+	}
+	titanium::Proxy* proxy = NativeObject::Unwrap<titanium::Proxy>(holder);
 	if (!proxy) {
 		return;
 	}
@@ -431,11 +475,12 @@ void ExampleProxy::setter_message(Local<Name> property, Local<Value> value, cons
 	}
 
 	jobject javaProxy = proxy->getJavaObject();
+	if (javaProxy == NULL) {
+		return;
+	}
 	env->CallVoidMethodA(javaProxy, methodID, jArguments);
 
-	if (!JavaObject::useGlobalRefs) {
-		env->DeleteLocalRef(javaProxy);
-	}
+	proxy->unreferenceJavaObject(javaProxy);
 
 
 

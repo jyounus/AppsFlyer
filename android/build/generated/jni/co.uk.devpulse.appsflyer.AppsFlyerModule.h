@@ -19,7 +19,7 @@ namespace appsflyer {
 class AppsFlyerModule : public titanium::Proxy
 {
 public:
-	explicit AppsFlyerModule(jobject javaObject);
+	explicit AppsFlyerModule();
 
 	static void bindProxy(v8::Local<v8::Object>, v8::Local<v8::Context>);
 	static v8::Local<v8::FunctionTemplate> getProxyTemplate(v8::Isolate*);

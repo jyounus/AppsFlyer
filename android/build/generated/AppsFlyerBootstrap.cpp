@@ -50,10 +50,10 @@ static void AppsFlyer_getBinding(const FunctionCallbackInfo<Value>& args)
 		return;
 	}
 
-	titanium::Utf8Value bindingValue(binding);
+	v8::String::Utf8Value bindingValue(binding);
 	LOGD(TAG, "Looking up binding: %s", *bindingValue);
 
-	titanium::bindings::BindEntry *extBinding = ::AppsFlyerBindings::lookupGeneratedInit(
+	titanium::bindings::BindEntry *extBinding = titanium::bindings::AppsFlyerBindings::lookupGeneratedInit(
 		*bindingValue, bindingValue.length());
 
 	if (!extBinding) {
@@ -82,6 +82,7 @@ static void AppsFlyer_init(Local<Object> exports, Local<Context> context)
 
 		exports->Set(name, source);
 	}
+
 	Local<FunctionTemplate> constructor = FunctionTemplate::New(isolate, AppsFlyer_getBinding);
 	exports->Set(String::NewFromUtf8(isolate, "getBinding"), constructor->GetFunction(context).ToLocalChecked());
 }
@@ -97,11 +98,11 @@ static void AppsFlyer_dispose(Isolate* isolate)
 	uint32_t length = propertyNames->Length();
 
 	for (uint32_t i = 0; i < length; ++i) {
-		titanium::Utf8Value binding(propertyNames->Get(i));
+		v8::String::Utf8Value binding(propertyNames->Get(i));
 		int bindingLength = binding.length();
 
 		titanium::bindings::BindEntry *extBinding =
-			::AppsFlyerBindings::lookupGeneratedInit(*binding, bindingLength);
+			titanium::bindings::AppsFlyerBindings::lookupGeneratedInit(*binding, bindingLength);
 
 		if (extBinding && extBinding->dispose) {
 			extBinding->dispose(isolate);
@@ -123,5 +124,5 @@ Java_co_uk_devpulse_appsflyer_AppsFlyerBootstrap_nativeBootstrap
 	(JNIEnv *env, jobject self)
 {
 	titanium::KrollBindings::addExternalBinding("co.uk.devpulse.appsflyer", &AppsFlyerBinding);
-	titanium::KrollBindings::addExternalLookup(&(::AppsFlyerBindings::lookupGeneratedInit));
+	titanium::KrollBindings::addExternalLookup(&(titanium::bindings::AppsFlyerBindings::lookupGeneratedInit));
 }
