@@ -1,152 +1,173 @@
-/Users/mitishah/Documents/Development/Appcelerator_Studio_Workspace/AppsFlyer/android/build/generated/obj/local/arm64-v8a/objs/co.uk.devpulse.appsflyer/co.uk.devpulse.appsflyer.AppsFlyerModule.o: \
- jni/co.uk.devpulse.appsflyer.AppsFlyerModule.cpp \
- jni/co.uk.devpulse.appsflyer.AppsFlyerModule.h \
- /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/Proxy.h \
- /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/v8.h \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/../../android/support/include/stdio.h \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/memory \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/__config \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/typeinfo \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/exception \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/cstdint \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/new \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/utility \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/__tuple \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/limits \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/iterator \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/iosfwd \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/tuple \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/cstring \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/../../android/support/include/string.h \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/cassert \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/atomic \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/vector \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/climits \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/__split_buffer \
- /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/v8-version.h \
- /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/v8config.h \
- /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/JavaObject.h \
- /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/EventEmitter.h \
- /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/NativeObject.h \
- /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/AndroidUtil.h \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h \
- /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/JNIUtil.h \
- /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/AndroidUtil.h \
- /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/JSException.h \
- /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/TypeConverter.h \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/map \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/__tree \
- /Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/functional \
- /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/V8Util.h \
- jni/co.uk.devpulse.appsflyer.ExampleProxy.h \
- /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/org.appcelerator.kroll.KrollModule.h \
- /Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/Proxy.h
+/Users/knemeth/Documents/GitHub/AppsFlyer/android/build/generated/obj/local/arm64-v8a/objs/co.uk.devpulse.appsflyer/co.uk.devpulse.appsflyer.AppsFlyerModule.o: \
+  jni/co.uk.devpulse.appsflyer.AppsFlyerModule.cpp \
+  jni/co.uk.devpulse.appsflyer.AppsFlyerModule.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/Proxy.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/v8.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stddef.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stdint.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stdio.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__config \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/memory \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/type_traits \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cstddef \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/version \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/typeinfo \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/exception \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cstdlib \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stdlib.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cstdint \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/new \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/utility \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__tuple \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/initializer_list \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cstring \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/string.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__debug \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/limits \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/iterator \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/iosfwd \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/wchar.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__functional_base \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/tuple \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stdexcept \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cassert \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/atomic \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/vector \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__bit_reference \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/bit \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/algorithm \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/functional \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/climits \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/limits.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__split_buffer \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/v8-internal.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/v8-version.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/v8config.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/JavaObject.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/EventEmitter.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/NativeObject.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/AndroidUtil.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/JNIUtil.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/JSException.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/TypeConverter.h \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/map \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__tree \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__node_handle \
+  /usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/optional \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/V8Util.h \
+  jni/co.uk.devpulse.appsflyer.ExampleProxy.h \
+  /Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/org.appcelerator.kroll.KrollModule.h
 
 jni/co.uk.devpulse.appsflyer.AppsFlyerModule.h:
 
-/Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/Proxy.h:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/Proxy.h:
 
-/Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/v8.h:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/v8.h:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stddef.h:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/../../android/support/include/stdio.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stdint.h:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/memory:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stdio.h:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/__config:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__config:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/memory:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/type_traits:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/typeinfo:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cstddef:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/exception:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/version:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/cstdint:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/typeinfo:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/new:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/exception:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/utility:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cstdlib:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/__tuple:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stdlib.h:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/limits:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cstdint:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/iterator:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/new:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/utility:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/iosfwd:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__tuple:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/initializer_list:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cstring:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/tuple:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/string.h:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/cstring:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__debug:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/../../android/support/include/string.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/limits:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/cassert:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/iterator:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/atomic:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/iosfwd:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/vector:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/wchar.h:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__functional_base:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/tuple:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/climits:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/stdexcept:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/cassert:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/__split_buffer:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/atomic:
 
-/Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/v8-version.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/vector:
 
-/Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/v8config.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__bit_reference:
 
-/Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/JavaObject.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/bit:
 
-/Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/EventEmitter.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/algorithm:
 
-/Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/NativeObject.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/functional:
 
-/Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/AndroidUtil.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/climits:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/limits.h:
 
-/Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/JNIUtil.h:
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__split_buffer:
 
-/Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/AndroidUtil.h:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/v8-internal.h:
 
-/Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/JSException.h:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/v8-version.h:
 
-/Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/TypeConverter.h:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/v8config.h:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/map:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/JavaObject.h:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/__tree:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/EventEmitter.h:
 
-/Users/mitishah/Library/android-ndk-r12b/sources/cxx-stl/llvm-libc++/libcxx/include/functional:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/NativeObject.h:
 
-/Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/V8Util.h:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/AndroidUtil.h:
+
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/JNIUtil.h:
+
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/JSException.h:
+
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/TypeConverter.h:
+
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/map:
+
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__tree:
+
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/__node_handle:
+
+/usr/local/Caskroom/android-ndk/19/android-ndk-r19/sources/cxx-stl/llvm-libc++/include/optional:
+
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/V8Util.h:
 
 jni/co.uk.devpulse.appsflyer.ExampleProxy.h:
 
-/Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/org.appcelerator.kroll.KrollModule.h:
-
-/Users/mitishah/Library/Application\ Support/Titanium/mobilesdk/osx/7.4.1.GA/android/native/include/Proxy.h:
+/Users/knemeth/Library/Application\ Support/Titanium/mobilesdk/osx/8.3.0.GA/android/native/include/org.appcelerator.kroll.KrollModule.h:

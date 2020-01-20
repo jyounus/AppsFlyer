@@ -15,7 +15,7 @@
 	<string msgid="8928215447528550784" name="abc_searchview_description_submit">"استفسار جمع کرائیں"</string>
 	<string msgid="893419373245838918" name="abc_searchview_description_voice">"صوتی تلاش"</string>
 	<string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"اشتراک کریں مع"</string>
-	<string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> کے ساتھ اشتراک کریں"</string>
+	<string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME" xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">%s</ns1:g> کے ساتھ اشتراک کریں"</string>
 	<string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"سکیڑیں"</string>
 	<string msgid="146198913615257606" name="search_menu_title">"تلاش"</string>
 	<string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"‎999+‎"</string>

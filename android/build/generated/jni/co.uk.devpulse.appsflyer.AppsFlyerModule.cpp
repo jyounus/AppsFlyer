@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2011-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2011-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  */
@@ -59,7 +59,7 @@ void AppsFlyerModule::bindProxy(Local<Object> exports, Local<Context> context)
 		titanium::V8Util::fatalException(isolate, tryCatch);
 		return;
 	}
-	exports->Set(nameSymbol, moduleInstance);
+	exports->Set(context, nameSymbol, moduleInstance);
 }
 
 void AppsFlyerModule::dispose(Isolate* isolate)
@@ -72,8 +72,9 @@ void AppsFlyerModule::dispose(Isolate* isolate)
 	titanium::KrollModule::dispose(isolate);
 }
 
-Local<FunctionTemplate> AppsFlyerModule::getProxyTemplate(Isolate* isolate)
+Local<FunctionTemplate> AppsFlyerModule::getProxyTemplate(v8::Isolate* isolate)
 {
+	Local<Context> context = isolate->GetCurrentContext();
 	if (!proxyTemplate.IsEmpty()) {
 		return proxyTemplate.Get(isolate);
 	}
@@ -86,13 +87,14 @@ Local<FunctionTemplate> AppsFlyerModule::getProxyTemplate(Isolate* isolate)
 	// use symbol over string for efficiency
 	Local<String> nameSymbol = NEW_SYMBOL(isolate, "AppsFlyer");
 
-	Local<FunctionTemplate> t = titanium::Proxy::inheritProxyTemplate(isolate,
-		titanium::KrollModule::getProxyTemplate(isolate)
-, javaClass, nameSymbol);
+	Local<FunctionTemplate> t = titanium::Proxy::inheritProxyTemplate(
+		isolate,
+		titanium::KrollModule::getProxyTemplate(isolate),
+		javaClass,
+		nameSymbol);
 
 	proxyTemplate.Reset(isolate, t);
-	t->Set(titanium::Proxy::inheritSymbol.Get(isolate),
-		FunctionTemplate::New(isolate, titanium::Proxy::inherit<AppsFlyerModule>));
+	t->Set(titanium::Proxy::inheritSymbol.Get(isolate), FunctionTemplate::New(isolate, titanium::Proxy::inherit<AppsFlyerModule>));
 
 	// Method bindings --------------------------------------------------------
 	titanium::SetProtoMethod(isolate, t, "trackEvent", AppsFlyerModule::trackEvent);
@@ -109,16 +111,23 @@ Local<FunctionTemplate> AppsFlyerModule::getProxyTemplate(Isolate* isolate)
 	// Constants --------------------------------------------------------------
 
 	// Dynamic properties -----------------------------------------------------
-	instanceTemplate->SetAccessor(NEW_SYMBOL(isolate, "exampleProp"),
-			AppsFlyerModule::getter_exampleProp,
-			AppsFlyerModule::setter_exampleProp,
-			Local<Value>(), DEFAULT,
-			static_cast<v8::PropertyAttribute>(v8::DontDelete)
-		);
+	instanceTemplate->SetAccessor(
+		NEW_SYMBOL(isolate, "exampleProp"),
+		AppsFlyerModule::getter_exampleProp,
+		AppsFlyerModule::setter_exampleProp,
+		Local<Value>(),
+		DEFAULT,
+		static_cast<v8::PropertyAttribute>(v8::DontDelete)
+	);
 
 	// Accessors --------------------------------------------------------------
 
 	return scope.Escape(t);
+}
+
+Local<FunctionTemplate> AppsFlyerModule::getProxyTemplate(v8::Local<v8::Context> context)
+{
+	return getProxyTemplate(context->GetIsolate());
 }
 
 // Methods --------------------------------------------------------------------
@@ -126,6 +135,7 @@ void AppsFlyerModule::trackEvent(const FunctionCallbackInfo<Value>& args)
 {
 	LOGD(TAG, "trackEvent()");
 	Isolate* isolate = args.GetIsolate();
+	Local<Context> context = isolate->GetCurrentContext();
 	HandleScope scope(isolate);
 
 	JNIEnv *env = titanium::JNIScope::getEnv();
@@ -149,6 +159,7 @@ void AppsFlyerModule::trackEvent(const FunctionCallbackInfo<Value>& args)
 		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
 	}
 	if (holder.IsEmpty() || holder->IsNull()) {
+		LOGE(TAG, "Couldn't obtain argument holder");
 		args.GetReturnValue().Set(v8::Undefined(isolate));
 		return;
 	}
@@ -171,7 +182,6 @@ void AppsFlyerModule::trackEvent(const FunctionCallbackInfo<Value>& args)
 
 
 	bool isNew_0;
-
 	if (!args[0]->IsNull()) {
 		Local<Value> arg_0 = args[0];
 		jArguments[0].l =
@@ -181,6 +191,7 @@ void AppsFlyerModule::trackEvent(const FunctionCallbackInfo<Value>& args)
 	} else {
 		jArguments[0].l = NULL;
 	}
+
 
 	jobject javaProxy = proxy->getJavaObject();
 	if (javaProxy == NULL) {
@@ -213,6 +224,7 @@ void AppsFlyerModule::initialise(const FunctionCallbackInfo<Value>& args)
 {
 	LOGD(TAG, "initialise()");
 	Isolate* isolate = args.GetIsolate();
+	Local<Context> context = isolate->GetCurrentContext();
 	HandleScope scope(isolate);
 
 	JNIEnv *env = titanium::JNIScope::getEnv();
@@ -236,6 +248,7 @@ void AppsFlyerModule::initialise(const FunctionCallbackInfo<Value>& args)
 		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
 	}
 	if (holder.IsEmpty() || holder->IsNull()) {
+		LOGE(TAG, "Couldn't obtain argument holder");
 		args.GetReturnValue().Set(v8::Undefined(isolate));
 		return;
 	}
@@ -258,7 +271,6 @@ void AppsFlyerModule::initialise(const FunctionCallbackInfo<Value>& args)
 
 
 	bool isNew_0;
-
 	if (!args[0]->IsNull()) {
 		Local<Value> arg_0 = args[0];
 		jArguments[0].l =
@@ -268,6 +280,7 @@ void AppsFlyerModule::initialise(const FunctionCallbackInfo<Value>& args)
 	} else {
 		jArguments[0].l = NULL;
 	}
+
 
 	jobject javaProxy = proxy->getJavaObject();
 	if (javaProxy == NULL) {
@@ -300,6 +313,7 @@ void AppsFlyerModule::example(const FunctionCallbackInfo<Value>& args)
 {
 	LOGD(TAG, "example()");
 	Isolate* isolate = args.GetIsolate();
+	Local<Context> context = isolate->GetCurrentContext();
 	HandleScope scope(isolate);
 
 	JNIEnv *env = titanium::JNIScope::getEnv();
@@ -323,6 +337,7 @@ void AppsFlyerModule::example(const FunctionCallbackInfo<Value>& args)
 		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
 	}
 	if (holder.IsEmpty() || holder->IsNull()) {
+		LOGE(TAG, "Couldn't obtain argument holder");
 		args.GetReturnValue().Set(v8::Undefined(isolate));
 		return;
 	}
@@ -333,6 +348,7 @@ void AppsFlyerModule::example(const FunctionCallbackInfo<Value>& args)
 	}
 
 	jvalue* jArguments = 0;
+
 
 	jobject javaProxy = proxy->getJavaObject();
 	if (javaProxy == NULL) {
@@ -379,6 +395,8 @@ void AppsFlyerModule::getter_exampleProp(Local<Name> property, const PropertyCal
 		titanium::JSException::GetJNIEnvironmentError(isolate);
 		return;
 	}
+
+	Local<Context> context = isolate->GetCurrentContext();
 	static jmethodID methodID = NULL;
 	if (!methodID) {
 		methodID = env->GetMethodID(AppsFlyerModule::javaClass, "getExampleProp", "()Ljava/lang/String;");
@@ -395,6 +413,7 @@ void AppsFlyerModule::getter_exampleProp(Local<Name> property, const PropertyCal
 		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
 	}
 	if (holder.IsEmpty() || holder->IsNull()) {
+		LOGE(TAG, "Couldn't obtain argument holder");
 		args.GetReturnValue().Set(v8::Undefined(isolate));
 		return;
 	}
@@ -450,6 +469,8 @@ void AppsFlyerModule::setter_exampleProp(Local<Name> property, Local<Value> valu
 		return;
 	}
 
+	Local<Context> context = isolate->GetCurrentContext();
+
 	static jmethodID methodID = NULL;
 	if (!methodID) {
 		methodID = env->GetMethodID(AppsFlyerModule::javaClass, "setExampleProp", "(Ljava/lang/String;)V");
@@ -464,6 +485,7 @@ void AppsFlyerModule::setter_exampleProp(Local<Name> property, Local<Value> valu
 		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
 	}
 	if (holder.IsEmpty() || holder->IsNull()) {
+		LOGE(TAG, "Couldn't obtain argument holder");
 		args.GetReturnValue().Set(v8::Undefined(isolate));
 		return;
 	}
@@ -475,7 +497,6 @@ void AppsFlyerModule::setter_exampleProp(Local<Name> property, Local<Value> valu
 	jvalue jArguments[1];
 
 	
-
 	if (!value->IsNull()) {
 		Local<Value> arg_0 = value;
 		jArguments[0].l =

@@ -97,17 +97,33 @@ public class AppsFlyerModule extends KrollModule
 		// have to implement these, even if you dont add any logic to them
 		// https://support.appsflyer.com/hc/en-us/articles/209676073-Implementing-Deferred-Deeplinking-with-OneLink
 		AppsFlyerLib.getInstance().registerConversionListener(appContext, new AppsFlyerConversionListener() {
-            @Override
-            public void onInstallConversionDataLoaded(Map<String, String> conversionData) {}
 
-            @Override
-            public void onInstallConversionFailure(String errorMessage) {}
+											@Override
+											public void onConversionDataSuccess(Map<String, Object> conversionData) {
 
-            @Override
-            public void onAppOpenAttribution(Map<String, String> conversionData) {}
+															for (String attrName : conversionData.keySet()) {
+															Log.d("AppsFlyerConversionListener - onConversionDataSuccess", "attribute: " + attrName + " = " + conversionData.get(attrName));
+													}
+											}
 
-            @Override
-            public void onAttributionFailure(String errorMessage) {}
+											@Override
+											public void onConversionDataFail(String errorMessage) {
+								 							Log.d("AppsFlyerConversionListener - onConversionDataFail", "error getting conversion data: " + errorMessage);
+											}
+
+											@Override
+											public void onAppOpenAttribution(Map<String, String> conversionData) {
+
+													for (String attrName : conversionData.keySet()) {
+															Log.d("AppsFlyerConversionListener - onAppOpenAttribution", "attribute: " + attrName + " = " + conversionData.get(attrName));
+													}
+
+											}
+
+											@Override
+											public void onAttributionFailure(String errorMessage) {
+													Log.d("AppsFlyerConversionListener - onAttributionFailure", "error onAttributionFailure : " + errorMessage);
+											}
         });
 	}
 

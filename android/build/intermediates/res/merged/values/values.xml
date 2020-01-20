@@ -2110,7 +2110,7 @@
     </style>
 	<style name="Widget.Design.BottomSheet.Modal" parent="android:Widget">
         <item name="android:background">?android:attr/colorBackground</item>
-        <item name="android:elevation" ns1:ignore="NewApi">@dimen/design_bottom_sheet_modal_elevation</item>
+        <item name="android:elevation" xmlns:ns1="http://schemas.android.com/tools" ns1:ignore="NewApi">@dimen/design_bottom_sheet_modal_elevation</item>
         <item name="behavior_peekHeight">auto</item>
         <item name="behavior_hideable">true</item>
         <item name="behavior_skipCollapsed">false</item>
@@ -2278,7 +2278,7 @@
 	<string name="abc_searchview_description_submit">Submit query</string>
 	<string name="abc_searchview_description_voice">Voice search</string>
 	<string name="abc_shareactionprovider_share_with">Share with</string>
-	<string name="abc_shareactionprovider_share_with_application">Share with <ns1:g example="Mail" id="application_name">%s</ns1:g></string>
+	<string name="abc_shareactionprovider_share_with_application">Share with <ns1:g example="Mail" id="application_name" xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">%s</ns1:g></string>
 	<string name="abc_toolbar_collapse_description">Collapse</string>
 	<string name="search_menu_title">Search</string>
 	<string name="status_bar_notification_info_overflow">999+</string>
