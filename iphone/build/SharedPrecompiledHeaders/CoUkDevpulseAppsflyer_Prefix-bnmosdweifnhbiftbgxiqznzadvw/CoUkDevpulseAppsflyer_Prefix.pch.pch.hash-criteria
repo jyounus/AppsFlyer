@@ -1,0 +1,31 @@
+-x
+objective-c
+-target
+x86_64-apple-ios8.0-simulator
+-std=c99
+-fpascal-strings
+-Os
+-fno-common
+-DTI_VERSION=
+-DOBJC_OLD_DISPATCH_PROTOTYPES=0
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk
+-fasm-blocks
+-g
+-fobjc-abi-version=2
+-fobjc-legacy-dispatch
+-iquote
+-iquote
+-I/Users/knemeth/Documents/GitHub/AppsFlyer/iphone/build/Release-iphonesimulator/include
+-I/Users/knemeth/Library/Application Support/Titanium/mobilesdk/osx/8.3.0.GA/iphone/include
+-I/Users/knemeth/Library/Application Support/Titanium/mobilesdk/osx/8.3.0.GA/iphone/include/TiCore
+-I/Users/knemeth/Library/Application Support/Titanium/mobilesdk/osx/8.3.0.GA/iphone/include/JavaScriptCore
+-I/Users/knemeth/Documents/GitHub/AppsFlyer/iphone/build/AppsFlyer.build/Release-iphonesimulator/AppsFlyer.build/DerivedSources-normal/x86_64
+-F/Users/knemeth/Documents/GitHub/AppsFlyer/iphone/build/Release-iphonesimulator
+-F/Users/knemeth/Library/Application Support/Titanium/mobilesdk/osx/8.3.0.GA/iphone/Frameworks
+-F/Users/knemeth/Documents/GitHub/AppsFlyer/iphone
+-DTI_POST_1_2
+x86_64-apple-darwin19.2.0
+"4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.17)"
+SDK_PRODUCT_BUILD_VERSION=17B102
+17B102

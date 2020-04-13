@@ -22,15 +22,15 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1AE89A9523D72FAA00623196 /* AppsFlyerShareInviteHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE89A9023D72FA900623196 /* AppsFlyerShareInviteHelper.h */; };
+		1AE89A9623D72FAA00623196 /* libAppsFlyerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE89A9123D72FA900623196 /* libAppsFlyerLib.a */; };
+		1AE89A9723D72FAA00623196 /* AppsFlyerTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE89A9223D72FA900623196 /* AppsFlyerTracker.h */; };
+		1AE89A9823D72FAA00623196 /* AppsFlyerCrossPromotionHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE89A9323D72FAA00623196 /* AppsFlyerCrossPromotionHelper.h */; };
+		1AE89A9923D72FAA00623196 /* AppsFlyerLinkGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE89A9423D72FAA00623196 /* AppsFlyerLinkGenerator.h */; };
 		24DD6CF91134B3F500162E58 /* CoUkDevpulseAppsflyerModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* CoUkDevpulseAppsflyerModule.h */; };
 		24DD6CFA1134B3F500162E58 /* CoUkDevpulseAppsflyerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* CoUkDevpulseAppsflyerModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* CoUkDevpulseAppsflyerModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* CoUkDevpulseAppsflyerModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* CoUkDevpulseAppsflyerModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* CoUkDevpulseAppsflyerModuleAssets.m */; };
-		45AF54B122143BEC00699C35 /* libAppsFlyerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AF54AD22143BEB00699C35 /* libAppsFlyerLib.a */; };
-		45AF54B222143BEC00699C35 /* AppsFlyerCrossPromotionHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AF54AE22143BEB00699C35 /* AppsFlyerCrossPromotionHelper.h */; };
-		45AF54B322143BEC00699C35 /* AppsFlyerShareInviteHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AF54AF22143BEC00699C35 /* AppsFlyerShareInviteHelper.h */; };
-		45AF54B422143BEC00699C35 /* AppsFlyerTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AF54B022143BEC00699C35 /* AppsFlyerTracker.h */; };
-		45AF54B62214488E00699C35 /* AppsFlyerLinkGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AF54B52214488E00699C35 /* AppsFlyerLinkGenerator.h */; };
 		65B766EB1EE95716000A0F40 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B766EA1EE95716000A0F40 /* AdSupport.framework */; };
 		AA747D9F0F9514B9006C5449 /* CoUkDevpulseAppsflyer_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CoUkDevpulseAppsflyer_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
@@ -48,16 +48,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AE89A9023D72FA900623196 /* AppsFlyerShareInviteHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerShareInviteHelper.h; sourceTree = "<group>"; };
+		1AE89A9123D72FA900623196 /* libAppsFlyerLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppsFlyerLib.a; sourceTree = "<group>"; };
+		1AE89A9223D72FA900623196 /* AppsFlyerTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerTracker.h; sourceTree = "<group>"; };
+		1AE89A9323D72FAA00623196 /* AppsFlyerCrossPromotionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerCrossPromotionHelper.h; sourceTree = "<group>"; };
+		1AE89A9423D72FAA00623196 /* AppsFlyerLinkGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerLinkGenerator.h; sourceTree = "<group>"; };
 		24DD6CF71134B3F500162E58 /* CoUkDevpulseAppsflyerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoUkDevpulseAppsflyerModule.h; path = Classes/CoUkDevpulseAppsflyerModule.h; sourceTree = "<group>"; };
 		24DD6CF81134B3F500162E58 /* CoUkDevpulseAppsflyerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoUkDevpulseAppsflyerModule.m; path = Classes/CoUkDevpulseAppsflyerModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* CoUkDevpulseAppsflyerModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoUkDevpulseAppsflyerModuleAssets.h; path = Classes/CoUkDevpulseAppsflyerModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* CoUkDevpulseAppsflyerModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoUkDevpulseAppsflyerModuleAssets.m; path = Classes/CoUkDevpulseAppsflyerModuleAssets.m; sourceTree = "<group>"; };
-		45AF54AD22143BEB00699C35 /* libAppsFlyerLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppsFlyerLib.a; sourceTree = "<group>"; };
-		45AF54AE22143BEB00699C35 /* AppsFlyerCrossPromotionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerCrossPromotionHelper.h; sourceTree = "<group>"; };
-		45AF54AF22143BEC00699C35 /* AppsFlyerShareInviteHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerShareInviteHelper.h; sourceTree = "<group>"; };
-		45AF54B022143BEC00699C35 /* AppsFlyerTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppsFlyerTracker.h; path = "../../../../../Downloads/AF-iOS-SDK/AppsFlyerTracker.h"; sourceTree = "<group>"; };
-		45AF54B52214488E00699C35 /* AppsFlyerLinkGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppsFlyerLinkGenerator.h; path = ../../../../../.Trash/AppsFlyerLinkGenerator.h; sourceTree = "<group>"; };
 		65B766EA1EE95716000A0F40 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
 		AA747D9E0F9514B9006C5449 /* CoUkDevpulseAppsflyer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoUkDevpulseAppsflyer_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45AF54B122143BEC00699C35 /* libAppsFlyerLib.a in Frameworks */,
+				1AE89A9623D72FAA00623196 /* libAppsFlyerLib.a in Frameworks */,
 				AB103C6A2141441400D74BE7 /* iAd.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				65B766EB1EE95716000A0F40 /* AdSupport.framework in Frameworks */,
@@ -102,11 +102,11 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				45AF54B52214488E00699C35 /* AppsFlyerLinkGenerator.h */,
-				45AF54AE22143BEB00699C35 /* AppsFlyerCrossPromotionHelper.h */,
-				45AF54AF22143BEC00699C35 /* AppsFlyerShareInviteHelper.h */,
-				45AF54B022143BEC00699C35 /* AppsFlyerTracker.h */,
-				45AF54AD22143BEB00699C35 /* libAppsFlyerLib.a */,
+				1AE89A9323D72FAA00623196 /* AppsFlyerCrossPromotionHelper.h */,
+				1AE89A9423D72FAA00623196 /* AppsFlyerLinkGenerator.h */,
+				1AE89A9023D72FA900623196 /* AppsFlyerShareInviteHelper.h */,
+				1AE89A9223D72FA900623196 /* AppsFlyerTracker.h */,
+				1AE89A9123D72FA900623196 /* libAppsFlyerLib.a */,
 				AB103C692141441400D74BE7 /* iAd.framework */,
 				65B766EA1EE95716000A0F40 /* AdSupport.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
@@ -143,11 +143,11 @@
 			files = (
 				AA747D9F0F9514B9006C5449 /* CoUkDevpulseAppsflyer_Prefix.pch in Headers */,
 				24DD6CF91134B3F500162E58 /* CoUkDevpulseAppsflyerModule.h in Headers */,
+				1AE89A9723D72FAA00623196 /* AppsFlyerTracker.h in Headers */,
+				1AE89A9523D72FAA00623196 /* AppsFlyerShareInviteHelper.h in Headers */,
+				1AE89A9823D72FAA00623196 /* AppsFlyerCrossPromotionHelper.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* CoUkDevpulseAppsflyerModuleAssets.h in Headers */,
-				45AF54B222143BEC00699C35 /* AppsFlyerCrossPromotionHelper.h in Headers */,
-				45AF54B422143BEC00699C35 /* AppsFlyerTracker.h in Headers */,
-				45AF54B322143BEC00699C35 /* AppsFlyerShareInviteHelper.h in Headers */,
-				45AF54B62214488E00699C35 /* AppsFlyerLinkGenerator.h in Headers */,
+				1AE89A9923D72FAA00623196 /* AppsFlyerLinkGenerator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
