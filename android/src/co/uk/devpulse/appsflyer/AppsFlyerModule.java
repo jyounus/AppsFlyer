@@ -71,7 +71,7 @@ public class AppsFlyerModule extends KrollModule
 		Log.d(LCAT, "set example property: " + value);
 	}
 
-
+	@SuppressWarnings({"unchecked"})
 	private HashMap<String, Object> toHashMap(Object data) {
         if (data != null) {
             return (HashMap<String, Object>)data;
